@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-{{--<h1>Hello! {{ $name }} </h1>
+<h1>Hello! {{ $name }} </h1>
 <h2>为空的默认值:-- {{ $null or '默认值'}} </h2>
-<h2>你今年 {{ $age }} 岁了 </h2>--}}
-{{ $name }}
+<h2>你今年 {{ $age }} 岁了 </h2>
+{{ $DataBasename or '未连接数据库' }}
 </body>
 </html>

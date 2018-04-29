@@ -14,8 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('test',function (){
-   return 'test Get';
+Route::get('users',function (){
+
+    $user=new App\User();
+
+    return $user->all();
 });
 #任何方法都可以
 Route::any('any',function (){
